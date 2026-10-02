@@ -1,0 +1,12 @@
+{
+  "name": "Поставка PRO",
+  "short_name": "Поставка PRO",
+  "description": "Учёт поставок, приёмки, продаж и остатков",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#141127",
+  "theme_color": "#141127",
+  "lang": "ru",
+  "icons": [{"src":"./icons/icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
+}
