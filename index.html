@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#141127">
+  <meta name="description" content="Локальный учёт поставок, приёмки, продаж и остатков">
+  <title>Поставка PRO</title>
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" href="./icons/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="brand"><span class="brand-mark">П</span><div><strong>Поставка PRO</strong><small id="syncLabel">Данные на этом устройстве</small></div></div>
+      <div class="top-actions"><button class="icon-btn" id="searchBtn" aria-label="Поиск">⌕</button><button class="icon-btn" id="settingsBtn" aria-label="Настройки">⚙</button></div>
+    </header>
+    <main id="app" tabindex="-1"><div class="loading-card"><span class="spinner"></span><p>Загружаем данные…</p></div></main>
+    <nav class="bottom-nav" aria-label="Основная навигация">
+      <button data-route="home" class="active"><span>⌂</span>Главная</button>
+      <button data-route="factories"><span>◇</span>Заводы</button>
+      <button data-route="shipments"><span>▣</span>Поставки</button>
+      <button data-route="sales"><span>₽</span>Продажи</button>
+      <button data-route="reports"><span>▥</span>Отчёты</button>
+    </nav>
+  </div>
+  <div id="modalRoot"></div>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
